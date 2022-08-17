@@ -9,19 +9,19 @@ spring:
     gateway:
       routes:
         - id: order
-          uri: http://user08-order:8080
+          uri: http://team2-order:8080
           predicates:
             - Path=/orders/** 
         - id: delivery
-          uri: http://user08-delivery:8080
+          uri: http://team2-delivery:8080
           predicates:
             - Path=/deliveries/** 
         - id: product
-          uri: http://user08-product-NEW2:8080
+          uri: http://team2-product-NEW2:8080
           predicates:
             - Path=/inventories/** 
         - id: frontend
-          uri: http://user08-frontend:8080
+          uri: http://team2-frontend:8080
           predicates:
             - Path=/**
       globalcors:
@@ -44,19 +44,19 @@ spring:
     gateway:
       routes:
         - id: order
-          uri: http://user08-order:8080
+          uri: http://team2-order:8080
           predicates:
             - Path=/orders/** 
         - id: delivery
-          uri: http://user08-delivery:8080
+          uri: http://team2-delivery:8080
           predicates:
             - Path=/deliveries/** 
         - id: product
-          uri: http://user08-product:8080
+          uri: http://team2-product:8080
           predicates:
             - Path=/inventories/** 
         - id: frontend
-          uri: http://user08-frontend:8080
+          uri: http://team2-frontend:8080
           predicates:
             - Path=/**
       globalcors:
